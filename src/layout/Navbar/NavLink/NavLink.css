@@ -1,0 +1,15 @@
+.navLink {
+    text-decoration: none;
+    font-size: 2rem;
+    margin: 1rem;
+    padding: 2rem 1rem;
+    color: var(--light);
+    border-bottom: 2px solid transparent;
+    transition: all 250ms ease;
+}
+
+.navLink:hover, .navLink:active, .active {
+    color: var(--light-purple);
+    background-color: rgb(53, 53, 53);
+    border-bottom: 2px solid var(--light-purple);
+}

@@ -1,32 +1,22 @@
 import React from "react";
 import NavLink from "./NavLink/NavLink";
+import SiteId from "../../components/SiteId/SiteId";
+import Button from "../../UI/Button/Button";
+import styles from "./Navbar.css";
 
-const Navbar = () => {
-  const navigation = [
-    {
-      label: "About",
-      url: "#about"
-    },
-    {
-      label: "Skills",
-      url: "#skills"
-    },
-    {
-      label: "Projects",
-      url: "#projects"
-    }
-  ];
-
+const Navbar = props => {
   return (
-    <div>
-      <nav>
-        <ul>
-          {navigation.map(nav => (
-            <NavLink url={nav.url}>{nav.label}</NavLink>
-          ))}
-        </ul>
-      </nav>
-    </div>
+    <nav className={styles.Navbar}>
+      <SiteId name={props.name} />
+      <ul>
+        {props.navigation.map(nav => (
+          <NavLink key={nav.label} url={nav.url}>
+            {nav.label}
+          </NavLink>
+        ))}
+        <Button>Contact Me</Button>
+      </ul>
+    </nav>
   );
 };
 

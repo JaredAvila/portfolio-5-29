@@ -1,0 +1,26 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    /*   1rem = 10px, 10/16 = 62.5%   */
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --dark: #111013;
+    --purple: #65427c;
+    --light-purple: #a777c7;
+    --light: rgb(238, 238, 238);
+    --light-grey: rgb(216, 216, 216);
+    --grey: rgb(179, 179, 179);
+    --yellow: rgb(216, 216, 46);
+    --light-yellow: rgb(255, 255, 143);
+}

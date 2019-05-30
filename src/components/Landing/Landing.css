@@ -1,0 +1,93 @@
+.Landing {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rajdhani', sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../../assets/img/computer.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: var(--light);
+    letter-spacing: .2rem;
+}
+
+.headLine {
+    font-size: 6rem;
+}
+
+.subLine {
+    font-size: 4rem;
+    margin-bottom: 5rem;
+}
+
+.linkContainer {
+    position: relative;
+    width: 100%;
+}
+
+.links {
+    color: var(--light-purple);
+    transition: all 300ms ease;
+    font-size: 5rem;
+    margin: 6rem;
+    position: absolute;
+}
+
+.github {
+    top: 0;
+    left: 40%;
+}
+
+.linkedin {
+    top: 0;
+    right: 40%;
+}
+
+.links:hover {
+    color: var(--light);
+    animation: rotate .8s linear forwards;
+}
+
+.projectLink {
+    font-size: 3.5rem;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--yellow);
+    transition: all 400ms ease;
+}
+
+.projectLink:hover {
+    color: var(--light-yellow);
+}
+
+.projectLink i {
+    transition: transform .5s ease;
+}
+
+.projectLink:hover i {
+    transform: rotate(90deg);
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg) scale(1)
+    }
+    25% {
+        transform: rotate(180) scale(1.2)
+    }
+    50% {
+        transform: rotate(360deg) scale(1.6)
+    }
+    75% {
+        transform: rotate(180) scale(1.6)
+    }
+    100% {
+        transform: rotate(360deg) scale(1.6)
+    }
+}

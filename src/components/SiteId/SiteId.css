@@ -1,0 +1,18 @@
+.siteId {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    margin: 0 1.3rem;
+}
+
+.title {
+    font-size: 2.3rem;
+    color: var(--light);
+    letter-spacing: .4rem;
+    margin-left: 2.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

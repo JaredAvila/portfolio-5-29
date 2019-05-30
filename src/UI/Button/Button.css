@@ -1,0 +1,21 @@
+.Button {
+    color: var(--light);
+    background-color: var(--purple);
+    border: none;
+    outline: none;
+    padding: 1.1rem 2.3rem;
+    border-radius: 4px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: all 250ms ease;
+}
+
+.Button:hover {
+    background-color: var(--light-purple);
+    transform: translateY(-.5rem) scale(1.1);
+}
+
+.Button:active {
+    background-color: var(--purple);
+    transform: translateY(-.1rem) scale(1.1);
+}
