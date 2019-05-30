@@ -1,4 +1,4 @@
-Welcome to my portfolio. Feel free to use is as your own. Just change out my info. =)
+# Welcome to my portfolio. Feel free to use is as your own. Just change out my info. =)
 
 ## Available Scripts
 
