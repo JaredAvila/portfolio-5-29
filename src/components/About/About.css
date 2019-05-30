@@ -34,7 +34,7 @@
     height: 15rem;
     border-radius: 50%;
     width: 15rem;
-    margin: auto;
+    margin: 4rem auto;
 }
 
 .title {
@@ -48,7 +48,7 @@ p {
     font-size: 1.8rem;
 }
 
-.Left_photos {
+.Left_photos, .Right_photos {
     display: flex;
     flex-flow: row;
 }
@@ -84,4 +84,56 @@ p {
     font-size: 1.8rem;
     color: grey;
     margin-bottom: 2rem;
+}
+
+/* tablet and smaller desktop */
+
+@media (max-width:1350px) {
+    .title {
+        font-size: 3rem;
+    }
+    .coding, .sammy {
+        height: 30rem;
+    }
+    .camping, .sophie {
+        height: 35rem;
+    }
+    .quote {
+        font-size: 2rem;
+    }
+    .quote i {
+        font-size: 3rem;
+    }
+    .quote_name {
+        font-size: 1.3rem;
+    }
+    p {
+        font-size: 1.6rem;
+    }
+    /* tablet portrait */
+    @media(max-width:800px) {
+        .coding, .sammy {
+            height: 20rem;
+        }
+        .camping, .sophie {
+            height: 25rem;
+        }
+    }
+    /* phone */
+    @media(max-width:650px) {
+        .About {
+            flex-direction: column;
+            align-items: center;
+            padding: 10rem 0;
+        }
+        .title {
+            font-size: 2.5rem;
+        }
+        .Left, .Right {
+            width: 90%;
+        }
+        .coding, .sammy, .camping, .sophie {
+            display: none;
+        }
+    }
 }
