@@ -16,6 +16,7 @@
     padding: 1rem 1.5rem;
     border-radius: 50%;
     font-size: 1.8rem;
+    cursor: pointer;
 }
 
 @media(max-width: 740px) {

@@ -1,0 +1,6 @@
+.Footer {
+    padding: 5rem;
+    background-color: var(--grey);
+    font-size: 1.8rem;
+    text-align: right;
+}

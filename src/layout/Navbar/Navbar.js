@@ -22,7 +22,7 @@ const Navbar = props => {
           <Button>Contact Me</Button>
         </ul>
         <div className={styles.MenuBtn} onClick={props.clicked}>
-          <i class="fas fa-bars" />
+          <i className="fas fa-bars" />
         </div>
       </nav>
     </Fragment>
