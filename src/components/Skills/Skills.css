@@ -1,0 +1,60 @@
+.Skills {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("../../assets/img/coding.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10rem 2rem;
+    color: var(--light);
+    letter-spacing: .3rem;
+    transition: all 1s ease;
+}
+
+#container {
+    transition: all 1s ease;
+}
+
+.hide {
+    opacity: 0;
+    transform: translateY(500px);
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.title {
+    font-size: 4rem;
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 2rem 0;
+    border-bottom: 4px double var(--light);
+}
+
+.skillNames {
+    display: flex;
+    padding: 2rem;
+    justify-content: space-evenly;
+    font-size: 1.8rem;
+}
+
+.skillNames h3 {
+    cursor: pointer;
+    padding: 1rem 1.3rem;
+    border-radius: 4px;
+}
+
+.skillNames h3:hover, .skillActive {
+    background-color: rgba(179, 179, 179, 0.8);
+    color: var(--purple);
+}
+
+.skillList {
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
