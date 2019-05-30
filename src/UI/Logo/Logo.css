@@ -1,3 +1,9 @@
 .logo img {
     height: 3.5rem;
 }
+
+@media(max-width: 740px) {
+    .logo img {
+        height: 2.5rem;
+    }
+}

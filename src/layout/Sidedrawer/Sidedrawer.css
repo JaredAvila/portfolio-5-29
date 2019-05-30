@@ -1,0 +1,39 @@
+.Sidedrawer {
+    position: fixed;
+    width: 280px;
+    max-width: 70%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: 200;
+    background-color: var(--light);
+    box-sizing: border-box;
+    transition: transform 0.3s ease-out;
+}
+
+.List {
+    display: flex;
+    flex-flow: column;
+}
+
+.title {
+    text-align: center;
+    background-color: var(--grey);
+    width: 100%;
+    padding: 2rem 0rem;
+    color: var(--purple);
+}
+
+.Open {
+    transform: translateX(0);
+}
+
+.Close {
+    transform: translateX(300px)
+}
+
+@media(min-width: 740px) {
+    .Sidedrawer {
+        display: none;
+    }
+}

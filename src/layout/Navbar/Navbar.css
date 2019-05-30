@@ -8,3 +8,24 @@
     padding: 0 2rem;
     height: 6.7rem;
 }
+
+.MenuBtn {
+    color: var(--light);
+    display: none;
+    background-color: var(--purple);
+    padding: 1rem 1.5rem;
+    border-radius: 50%;
+    font-size: 1.8rem;
+}
+
+@media(max-width: 740px) {
+    .Navbar {
+        padding: 0 1rem;
+    }
+    .List {
+        display: none;
+    }
+    .MenuBtn {
+        display: block;
+    }
+}
