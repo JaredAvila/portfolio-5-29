@@ -1,3 +1,70 @@
 .About {
-    height: 100vh;
+    width: 100%;
+    padding: 15rem 20rem;
+    display: flex;
+    flex-flow: row;
+    color: var(--dark);
+}
+
+.Left, .Right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+.myPhoto {
+    height: 15rem;
+    border-radius: 50%;
+    width: 15rem;
+    margin: auto;
+}
+
+.title {
+    font-size: 5rem;
+    letter-spacing: .3rem;
+    margin-bottom: 3rem;
+}
+
+p {
+    padding: 1rem;
+    font-size: 1.8rem;
+}
+
+.Left_photos {
+    display: flex;
+    flex-flow: row;
+}
+
+.coding, .sammy {
+    height: 40rem;
+    margin: .5rem;
+    align-self: flex-end;
+    border-radius: 4px;
+}
+
+.camping, .sophie {
+    height: 50rem;
+    margin: .5rem;
+    border-radius: 4px;
+}
+
+.quote {
+    font-size: 2.7rem;
+    margin: 3rem .5rem;
+    padding-left: 1rem;
+    border-left: 4px solid var(--light-purple);
+}
+
+.quote i {
+    font-size: 4rem;
+    color: var(--yellow);
+    padding: 0 1rem;
+}
+
+.quote_name {
+    margin-left: auto;
+    font-size: 1.8rem;
+    color: grey;
+    margin-bottom: 2rem;
 }
