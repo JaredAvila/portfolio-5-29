@@ -49,7 +49,7 @@
 
 .links:hover {
     color: var(--light);
-    animation: rotate .8s linear forwards;
+    animation: bounce .5s linear forwards;
 }
 
 .projectLink {
@@ -74,20 +74,17 @@
     transform: rotate(90deg);
 }
 
-@keyframes rotate {
+@keyframes bounce {
     0% {
-        transform: rotate(0deg) scale(1)
+        transform: translateY(0rem);
     }
-    25% {
-        transform: rotate(180) scale(1.2)
+    30% {
+        transform: translateY(-1rem);
     }
-    50% {
-        transform: rotate(360deg) scale(1.6)
-    }
-    75% {
-        transform: rotate(180) scale(1.6)
+    70% {
+        transform: translateY(.5rem);
     }
     100% {
-        transform: rotate(360deg) scale(1.6)
+        transform: translateY(0rem);
     }
 }

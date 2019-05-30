@@ -20,26 +20,24 @@ class Landing extends Component {
     const txt = "Hello, my name is Jared Avila";
     const txt2 = "and I am a Software Developer.  =)";
     this.intro1(i, txt, newHeadLine);
-    setTimeout(this.intro2(j, txt2, newSubLine), 3000);
+    setTimeout(() => this.intro2(j, txt2, newSubLine), 3000);
   };
 
   intro1 = (i, txt, newHeadLine) => {
     if (i < txt.length) {
       newHeadLine += txt.charAt(i);
-      console.log(newHeadLine);
       this.setState({ headline: newHeadLine });
       i++;
-      setTimeout(this.intro1(i, txt, newHeadLine), 80);
+      setTimeout(() => this.intro1(i, txt, newHeadLine), 80);
     }
   };
 
   intro2 = (j, txt2, newSubLine) => {
     if (j < txt2.length) {
       newSubLine += txt2.charAt(j);
-      console.log(newSubLine);
       this.setState({ subline: newSubLine });
       j++;
-      setTimeout(this.intro2(j, txt2, newSubLine), 80);
+      setTimeout(() => this.intro2(j, txt2, newSubLine), 80);
     }
   };
 
