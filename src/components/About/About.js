@@ -10,16 +10,33 @@ import sammy from "../../assets/img/about/samnme.jpg";
 import sophie from "../../assets/img/about/sophnme.jpg";
 
 class About extends Component {
+  state = {
+    styleLeft: [styles.Left, styles.hidden_left],
+    styleRight: [styles.Right, styles.hidden_right]
+  };
+
+  onLeftEnterHandler = () => {
+    const newStyles = [styles.Left, styles.show];
+    this.setState({ styleLeft: newStyles });
+  };
+  onRightEnterHandler = () => {
+    const newStyles = [styles.Right, styles.show];
+    this.setState({ styleRight: newStyles });
+  };
+
   render() {
     return (
       <div id="about" className={styles.About}>
-        <div className={styles.Left}>
+        <div className={this.state.styleLeft.join(" ")}>
           <img className={styles.myPhoto} src={myPhoto} alt="Jared Avila" />
           <h1 className={styles.title}>Hi, my name is Jared</h1>
-          <p>
-            I am a full-stack software engineer and I live in beautiful
-            Sunnyvale, CA with my wife and two kids where I was born and raised.
-          </p>
+          <Waypoint onEnter={this.onLeftEnterHandler}>
+            <p>
+              I am a full-stack software engineer and I live in beautiful
+              Sunnyvale, CA with my wife and two kids where I was born and
+              raised.
+            </p>
+          </Waypoint>
           <p>
             I built my first webpage when I was fifteen years old and it has
             been a passion of mine since. I studied software engineering at West
@@ -40,7 +57,7 @@ class About extends Component {
             />
           </div>
         </div>
-        <div className={styles.Right}>
+        <div className={this.state.styleRight.join(" ")}>
           <div className={styles.Right_photos}>
             <img
               className={styles.sammy}
@@ -54,17 +71,20 @@ class About extends Component {
             />
           </div>
           <h2 className={styles.quote}>
-            <i class="fas fa-quote-left" /> Eat the delicious food. Walk in the
-            sunshine. Jump in the ocean. Say the truth that you're carrying in
-            your heart like hidden treasure. Be silly. Be kind. Be weird.
+            <i className="fas fa-quote-left" /> Eat the delicious food. Walk in
+            the sunshine. Jump in the ocean. Say the truth that you're carrying
+            in your heart like hidden treasure. Be silly. Be kind. Be weird.
             There's no time for anything else.
           </h2>
           <h3 className={styles.quote_name}>-Keanu Reeves</h3>
-          <p>
-            I am a very determined, hard-working individual that prides myself
-            having strong integrity and character. When I put my will towards
-            something there is little that can hold me back.
-          </p>
+          <Waypoint onEnter={this.onRightEnterHandler}>
+            <p>
+              I am a very determined, hard-working individual that prides myself
+              having strong integrity and character. When I put my will towards
+              something there is little that can hold me back.
+            </p>
+          </Waypoint>
+
           <p>
             My entire career I have worked in management and training, a few
             years back I decided to alter my career path to include my love for

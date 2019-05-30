@@ -1,16 +1,33 @@
 .About {
     width: 100%;
-    padding: 15rem 20rem;
+    padding: 15rem 0;
     display: flex;
     flex-flow: row;
+    justify-content: space-evenly;
     color: var(--dark);
 }
 
 .Left, .Right {
-    width: 50%;
+    width: 40%;
     height: 100%;
     display: flex;
     flex-flow: column;
+    transition: all 1.5s ease;
+}
+
+.hidden_left {
+    opacity: 0;
+    transform: translateX(-700px);
+}
+
+.hidden_right {
+    opacity: 0;
+    transform: translateX(700px);
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .myPhoto {
