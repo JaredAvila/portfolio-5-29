@@ -2,6 +2,8 @@
     padding: 15rem 0 25rem 0;
     text-align: center;
     background-color: var(--light);
+    opacity: 1;
+    transition: all 2s ease .5s;
 }
 
 .container {
@@ -15,4 +17,10 @@
     letter-spacing: .4rem;
     color: var(--purple);
     margin-bottom: 7rem;
+}
+
+.hidden {
+    padding: 15rem 0 25rem 0;
+    opacity: 1;
+    opacity: 0;
 }

@@ -131,7 +131,9 @@ class Skills extends Component {
     return (
       <div className={styles.Skills} id="skills">
         <div id={styles.container} className={this.state.containerClasses}>
-          <h1 className={styles.title}>Technical Skills</h1>
+          <Waypoint onEnter={this.onEnterHandler}>
+            <h1 className={styles.title}>Technical Skills</h1>
+          </Waypoint>
           <div className={styles.skillNames}>
             <h3
               className={this.state.langClass}
@@ -158,17 +160,15 @@ class Skills extends Component {
               Databases
             </h3>
           </div>
-          <Waypoint onEnter={this.onEnterHandler}>
-            <div className={styles.skillList}>
-              {this.state.skills.map(skill => {
-                return (
-                  <Skill key={skill.name} img={skill.img}>
-                    {skill.name}
-                  </Skill>
-                );
-              })}
-            </div>
-          </Waypoint>
+          <div className={styles.skillList}>
+            {this.state.skills.map(skill => {
+              return (
+                <Skill key={skill.name} img={skill.img}>
+                  {skill.name}
+                </Skill>
+              );
+            })}
+          </div>
         </div>
       </div>
     );

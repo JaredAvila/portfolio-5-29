@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Project from "./Project/Project";
+import { Waypoint } from "react-waypoint";
 
 import freqFooding from "../../assets/img/projects/freq_fooding.png";
 import meanMarketplace from "../../assets/img/projects/mean_marketplace.png";
@@ -72,13 +73,20 @@ class Projects extends Component {
         desc:
           "An ecommerce application build using Angular, Node, Epxress and MongoDB. I use a CSS pre-processor, SCSS, to create dynamic styles and a responsive design. Fully validated login/registration system validated on the backend and a database to store customer data. Font-end authentication handled via Passport and JWT libraries. Also set up Paypal sandbox for payment handling."
       }
-    ]
+    ],
+    fadeClass: styles.hidden
+  };
+
+  onEnterHandler = () => {
+    this.setState({ fadeClass: styles.Projects });
   };
 
   render() {
     return (
-      <div id="projects" className={styles.Projects}>
-        <h1 className={styles.title}>Projects</h1>
+      <div id="projects" className={this.state.fadeClass}>
+        <Waypoint onEnter={this.onEnterHandler}>
+          <h1 className={styles.title}>Projects</h1>
+        </Waypoint>
         <div className={styles.container}>
           {this.state.projects.map(proj => (
             <Project

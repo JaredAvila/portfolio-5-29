@@ -6,7 +6,7 @@
     padding: 10rem 2rem;
     color: var(--light);
     letter-spacing: .3rem;
-    transition: all 1s ease;
+    transition: all 1.5s ease;
 }
 
 #container {
