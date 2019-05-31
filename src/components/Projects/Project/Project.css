@@ -1,0 +1,84 @@
+.Project {
+    position: relative;
+    width: 40rem;
+    background-color: var(--grey);
+    border: 1px solid var(--light-grey);
+    box-shadow: 0px 2px 4px var(--dark);
+    text-align: center;
+    margin: 1rem;
+    padding-bottom: 1rem;
+    transition: all 250ms ease;
+}
+
+.Project:hover {
+    transform: scale(1.1);
+}
+
+.Project img {
+    width: 100%;
+    transition: all 250ms ease;
+    margin-bottom: 2rem;
+}
+
+.Project:hover img {
+    filter: blur(3px) brightness(.5);
+}
+
+.Project:hover .title, .Project:hover p {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.title {
+    position: absolute;
+    top: 5rem;
+    left: 7rem;
+    letter-spacing: .4rem;
+    color: var(--light);
+    transform: scale(.5);
+    opacity: 0;
+    transition: all 250ms ease;
+}
+
+.Project p {
+    font-size: 1.3rem;
+    letter-spacing: .2rem;
+    overflow-wrap: normal;
+    position: absolute;
+    top: 12rem;
+    left: 2rem;
+    color: var(--yellow);
+    transform: scale(.1);
+    opacity: 0;
+    font-weight: bold;
+    transition: all 250ms ease;
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.links i {
+    font-size: 3.5rem;
+    color: var(--purple);
+    cursor: pointer;
+    transition: all 250ms ease;
+}
+
+.links i:hover {
+    color: var(--light-purple);
+}
+
+.Link {
+    padding: 1rem 1.5rem;
+    background-color: var(--purple);
+    color: var(--light);
+    border-radius: 4px;
+    transition: all 250ms ease;
+}
+
+.Link:hover {
+    background-color: var(--light-purple);
+}

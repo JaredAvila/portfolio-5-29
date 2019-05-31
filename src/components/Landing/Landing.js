@@ -12,6 +12,8 @@ class Landing extends Component {
     this.intro();
   }
 
+  componentWillUnmount() {}
+
   intro = () => {
     let i = 0;
     let j = 0;

@@ -43,7 +43,7 @@
     margin-bottom: 3rem;
 }
 
-p {
+.Left p, .Right p {
     padding: 1rem;
     font-size: 1.8rem;
 }

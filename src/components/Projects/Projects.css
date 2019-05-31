@@ -1,0 +1,18 @@
+.Projects {
+    padding: 15rem 0 25rem 0;
+    text-align: center;
+    background-color: var(--light);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.title {
+    font-size: 5rem;
+    letter-spacing: .4rem;
+    color: var(--purple);
+    margin-bottom: 7rem;
+}
