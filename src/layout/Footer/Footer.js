@@ -7,7 +7,9 @@ const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <div className={styles.Footer}>
-      <p>Jared Avila Designs | {year}</p>
+      <p>
+        Jared Avila Designs | <i className="far fa-copyright" /> {year}
+      </p>
     </div>
   );
 };

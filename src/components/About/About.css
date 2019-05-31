@@ -17,12 +17,12 @@
 
 .hidden_left {
     opacity: 0;
-    transform: translateX(-700px);
+    transform: translateX(-200px);
 }
 
 .hidden_right {
     opacity: 0;
-    transform: translateX(700px);
+    transform: translateX(100px);
 }
 
 .show {

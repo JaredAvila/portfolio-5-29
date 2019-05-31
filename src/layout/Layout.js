@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 import { Route } from "react-router-dom";
 
 import Navbar from "./Navbar/Navbar";
@@ -7,40 +6,53 @@ import Footer from "./Footer/Footer";
 import Main from "../pages/Main/Main";
 import ProjectPage from "../pages/ProjectPage/ProjectPage";
 import Sidedrawer from "./Sidedrawer/Sidedrawer";
+import Resume from "../pages/Resume/Resume";
 
 class Layout extends Component {
   state = {
     name: "Jared Avila",
     navigation: [
       {
+        label: "Home",
+        url: "/"
+      },
+      {
         label: "About",
-        url: "#about"
+        url: "/#about"
       },
       {
         label: "Skills",
-        url: "#skills"
+        url: "/#skills"
       },
       {
         label: "Projects",
-        url: "#projects"
+        url: "/#projects"
+      },
+      {
+        label: "Resume",
+        url: "/resume"
       }
     ],
     sideDrawerNav: [
       {
         label: "About",
-        url: "#about"
+        url: "/#about"
       },
       {
         label: "Skills",
-        url: "#skills"
+        url: "/#skills"
       },
       {
         label: "Projects",
-        url: "#projects"
+        url: "/#projects"
+      },
+      {
+        label: "Resume",
+        url: "/resume"
       },
       {
         label: "Contact",
-        url: "#contact"
+        url: "/#contact"
       }
     ],
     showSideDrawer: false
@@ -71,6 +83,7 @@ class Layout extends Component {
         />
         <Route path="/" exact component={Main} />
         <Route path="/project" component={ProjectPage} />
+        <Route path="/resume" component={Resume} />
         <Footer />
       </div>
     );
