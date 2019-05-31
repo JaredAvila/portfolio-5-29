@@ -21,6 +21,6 @@
 
 .hidden {
     padding: 15rem 0 25rem 0;
-    opacity: 1;
+    text-align: center;
     opacity: 0;
 }

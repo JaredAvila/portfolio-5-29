@@ -7,6 +7,7 @@ import Main from "../pages/Main/Main";
 import ProjectPage from "../pages/ProjectPage/ProjectPage";
 import Sidedrawer from "./Sidedrawer/Sidedrawer";
 import Resume from "../pages/Resume/Resume";
+import Contact from "../components/Contact/Contact";
 
 class Layout extends Component {
   state = {
@@ -35,6 +36,10 @@ class Layout extends Component {
     ],
     sideDrawerNav: [
       {
+        label: "Home",
+        url: "/"
+      },
+      {
         label: "About",
         url: "/#about"
       },
@@ -52,7 +57,7 @@ class Layout extends Component {
       },
       {
         label: "Contact",
-        url: "/#contact"
+        url: "/contact"
       }
     ],
     showSideDrawer: false
@@ -84,6 +89,7 @@ class Layout extends Component {
         <Route path="/" exact component={Main} />
         <Route path="/project" component={ProjectPage} />
         <Route path="/resume" component={Resume} />
+        <Route path="/contact" component={Contact} />
         <Footer />
       </div>
     );

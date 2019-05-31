@@ -23,6 +23,7 @@
 @media(max-width: 740px) {
     .Navbar {
         padding: 0 1rem;
+        width: 100vw;
     }
     .List {
         display: none;

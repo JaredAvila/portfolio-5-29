@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { Link } from "react-router-dom";
 
 // components
 import NavLink from "./NavLink/NavLink";
@@ -19,7 +20,9 @@ const Navbar = props => {
               {nav.label}
             </NavLink>
           ))}
-          <Button>Contact Me</Button>
+          <Link to={{ pathname: "/contact" }}>
+            <Button>Contact Me</Button>
+          </Link>
         </ul>
         <div className={styles.MenuBtn} onClick={props.clicked}>
           <i className="fas fa-bars" />
