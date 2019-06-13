@@ -29,31 +29,13 @@ class Projects extends Component {
           "A single page recipe app that utilizes modern core JavaScript, SCSS and HTML to access over 2 million recipes provided throught the Edamame API. I use Axios to access the api and I use Webpack to bundle the project and take care of config."
       },
       {
-        name: "Burger Time",
-        github: "https://github.com/JaredAvila/Burger_Time-React-",
-        webLink: "https://hardcore-hamilton-3cbc40.netlify.com/",
-        img: burgerTime,
-        techUsed: [
-          "React",
-          "Redux",
-          "JSX/HTML5",
-          "CSS",
-          "JavaScript",
-          "Webpack",
-          "Axios",
-          "Firebase"
-        ],
-        desc:
-          "A burger builder and order tracker appliction build with React and Redux. I use CSS modules (setup via Webpack config) to create modularized stylesheets. Axios is used to send and recieve data from a Firebase database."
-      },
-      {
         name: "Family Coaching",
         github: "https://github.com/JaredAvila/family_coaching_site",
-        webLink: "https://musing-kepler-2c0573.netlify.com/",
+        webLink: "https://nifty-hopper-9751bd.netlify.com/",
         img: familyCoaching,
-        techUsed: ["HTML5", "CSS/Sass", "JavaScript"],
+        techUsed: ["React", "JSX", "JavaScript", "CSS Modules", "HTML5"],
         desc:
-          "A webpage I built for a client that wanted to boost his life coaching business. I used a CSS pre-processor, Sass, with modern HTML and Javascript to create a fully interactive user experience. Use of Sass mixins to create a responsive site that creates a great user experience on all devices."
+          "A webpage I built for a client that wanted to boost his life coaching business. I used React and JSX with modern semantic HTML5, CSS and Javascript to create a fully interactive user experience. Impelmentd React routing with advanced modular CSS to create a smooth and seamless user experience"
       },
       {
         name: "Mean Marketplace",
@@ -72,6 +54,24 @@ class Projects extends Component {
         ],
         desc:
           "An ecommerce application build using Angular, Node, Epxress and MongoDB. I use a CSS pre-processor, SCSS, to create dynamic styles and a responsive design. Fully validated login/registration system validated on the backend and a database to store customer data. Font-end authentication handled via Passport and JWT libraries. Also set up Paypal sandbox for payment handling."
+      },
+      {
+        name: "Burger Time",
+        github: "https://github.com/JaredAvila/Burger_Time-React-",
+        webLink: "https://gracious-clarke-bc9281.netlify.com/",
+        img: burgerTime,
+        techUsed: [
+          "React",
+          "Redux",
+          "JSX/HTML5",
+          "CSS",
+          "JavaScript",
+          "Webpack",
+          "Axios",
+          "Firebase"
+        ],
+        desc:
+          "A burger builder and order tracker appliction build with React and Redux. I use CSS modules (setup via Webpack config) to create modularized stylesheets. Axios is used to send and recieve data from a Firebase database."
       }
     ],
     fadeClass: styles.hidden

@@ -5,14 +5,14 @@
 }
 
 .top {
-    height: fit-content;
+    height: 70vh;
 }
 
 .top img {
-    width: 100vw;
+    height: 100%;
     filter: brightness(.5);
-    -webkit-clip-path: polygon(0 0, 52% 0, 29% 100%, 0% 100%);
-    clip-path: polygon(0 0, 52% 0, 29% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 0, 72% 0, 49% 100%, 0% 100%);
+    clip-path: polygon(0 0, 72% 0, 49% 100%, 0% 100%);
 }
 
 .title {
