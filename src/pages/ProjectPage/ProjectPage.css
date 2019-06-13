@@ -18,7 +18,7 @@
 .title {
     position: absolute;
     top: 25%;
-    left: 10%;
+    left: 5%;
     font-size: 5rem;
     color: var(--light);
     letter-spacing: .3rem;
@@ -98,7 +98,6 @@
         filter: brightness(.5);
         -webkit-clip-path: none;
         clip-path: none;
-        height: 60vh;
     }
     .List {
         right: 20%;
@@ -124,7 +123,6 @@
 @media(max-width: 500px) {
     .top img {
         filter: brightness(.3);
-        height: 65vh;
     }
     .title {
         position: absolute;

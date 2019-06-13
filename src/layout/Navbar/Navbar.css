@@ -20,7 +20,7 @@
     cursor: pointer;
 }
 
-@media(max-width: 740px) {
+@media(max-width: 780px) {
     .Navbar {
         padding: 0 1rem;
         width: 100vw;

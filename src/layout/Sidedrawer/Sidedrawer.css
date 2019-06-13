@@ -32,7 +32,7 @@
     transform: translateX(300px)
 }
 
-@media(min-width: 740px) {
+@media(min-width: 780px) {
     .Sidedrawer {
         display: none;
     }
