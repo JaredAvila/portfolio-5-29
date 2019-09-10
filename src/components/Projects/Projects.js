@@ -31,7 +31,7 @@ class Projects extends Component {
       {
         name: "Family Coaching",
         github: "https://github.com/JaredAvila/family_coaching_site",
-        webLink: "https://nifty-hopper-9751bd.netlify.com/",
+        webLink: "https://gifted-volhard-f55eeb.netlify.com/contact",
         img: familyCoaching,
         techUsed: ["React", "JSX", "JavaScript", "CSS Modules", "HTML5"],
         desc:

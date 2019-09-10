@@ -4,10 +4,6 @@ import { Waypoint } from "react-waypoint";
 
 import styles from "./About.css";
 import myPhoto from "../../assets/img/about/meToo.jpg";
-import camping from "../../assets/img/about/camping.jpg";
-import coding from "../../assets/img/about/project.jpg";
-import sammy from "../../assets/img/about/samnme.jpg";
-import sophie from "../../assets/img/about/sophnme.jpg";
 
 class About extends Component {
   state = {
@@ -33,43 +29,24 @@ class About extends Component {
           <Waypoint onEnter={this.onLeftEnterHandler}>
             <p>
               I am a full-stack software engineer and I live in beautiful
-              Sunnyvale, CA with my wife and two kids where I was born and
-              raised.
+              Sunnyvale, CA where I was born and raised. I specialize in
+              Javascript and love to develope on the front-end.
             </p>
           </Waypoint>
           <p>
             I built my first webpage when I was fifteen years old and it has
             been a passion of mine since. I studied software engineering at West
-            Valley College, and in 2018 I graduated from a coding bootcamp
-            called Coding Dojo, where I learned three full technology stacks in
-            three intense months.
+            Valley College and graduated from a coding bootcamp called Coding
+            Dojo, where I learned three full technology stacks in three intense
+            months. My education is never complete, every day I am learning and
+            growing.
           </p>
           <p>
             In my free time I enjoy spending time with my family, BBQing,
             playing guitar, cooking and hiking.
           </p>
-          <div className={styles.Left_photos}>
-            <img className={styles.camping} src={camping} alt="Me camping" />
-            <img
-              className={styles.coding}
-              src={coding}
-              alt="Me presenting a project"
-            />
-          </div>
         </div>
         <div className={this.state.styleRight.join(" ")}>
-          <div className={styles.Right_photos}>
-            <img
-              className={styles.sammy}
-              src={sammy}
-              alt="Me and Sammy, my son"
-            />
-            <img
-              className={styles.sophie}
-              src={sophie}
-              alt="Me and Sophie, my daughter"
-            />
-          </div>
           <h2 className={styles.quote}>
             <i className="fas fa-quote-left" /> Eat the delicious food. Walk in
             the sunshine. Jump in the ocean. Say the truth that you're carrying
