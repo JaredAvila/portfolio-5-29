@@ -3,9 +3,10 @@ import Project from "./Project/Project";
 import { Waypoint } from "react-waypoint";
 
 import freqFooding from "../../assets/img/projects/freq_fooding.png";
-import meanMarketplace from "../../assets/img/projects/mean_marketplace.png";
+import ticTacToe from "../../assets/img/projects/tic-tac-toe.png";
 import familyCoaching from "../../assets/img/projects/Family Coaching Solutions _ Certified Christian Counselor _ Life Coach - Google Chrome 5_9_2019 2_35_50 PM.png";
 import burgerTime from "../../assets/img/projects/Burger Time.png";
+import hcc from "../../assets/img/projects/hcc.png";
 
 import styles from "./Projects.css";
 
@@ -38,22 +39,13 @@ class Projects extends Component {
           "A webpage I built for a client that wanted to boost his life coaching business. I used React and JSX with modern semantic HTML5, CSS and Javascript to create a fully interactive user experience. Impelmentd React routing with advanced modular CSS to create a smooth and seamless user experience"
       },
       {
-        name: "Mean Marketplace",
-        github: "https://github.com/JaredAvila/mean_store",
-        webLink: "http://3.18.225.118/",
-        img: meanMarketplace,
-        techUsed: [
-          "Angular 7",
-          "TypeScript",
-          "SCSS",
-          "Node.js",
-          "Express.js",
-          "MongoDB",
-          "Paypal API",
-          "Passport and JWT"
-        ],
+        name: "Tic-Tac-Toe",
+        github: "https://github.com/JaredAvila/Tic-Tac-Toe",
+        webLink: "https://reverent-spence-b9638e.netlify.com/",
+        img: ticTacToe,
+        techUsed: ["JavaScript", "CSS", "HTML"],
         desc:
-          "An ecommerce application build using Angular, Node, Epxress and MongoDB. I use a CSS pre-processor, SCSS, to create dynamic styles and a responsive design. Fully validated login/registration system validated on the backend and a database to store customer data. Font-end authentication handled via Passport and JWT libraries. Also set up Paypal sandbox for payment handling."
+          "A simple Tic-Tac-Toe game made with JavaScript, CSS and HTML. Play with a friend!"
       },
       {
         name: "Burger Time",
@@ -72,6 +64,15 @@ class Projects extends Component {
         ],
         desc:
           "A burger builder and order tracker appliction build with React and Redux. I use CSS modules (setup via Webpack config) to create modularized stylesheets. Axios is used to send and recieve data from a Firebase database."
+      },
+      {
+        name: "Health Claims Concierge",
+        github: "/",
+        webLink: "https://www.healthclaimsconcierge.com/",
+        img: hcc,
+        techUsed: ["WordPress", "PHP", "CSS", "HTML"],
+        desc:
+          "A site that I built and deplployed for a client. Client wanted to use Wordpress so she could easily manager her content and hav easy access to anaylitics and other plug ins."
       }
     ],
     fadeClass: styles.hidden
